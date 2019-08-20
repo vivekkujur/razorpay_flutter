@@ -98,8 +98,7 @@ public class RazorpayActivity extends Activity implements PaymentResultListener 
             data.putExtra(PAYMENT_ID, razorpayPaymentID);
             setResult(Activity.RESULT_OK, data);
             finish();
-            Toast.makeText(this, "Exception in onPaymentSuccess: " , Toast.LENGTH_LONG)
-                    .show();
+
         } catch (Exception e) {
             Log.e(TAG, "Exception in onPaymentSuccess", e);
             data.putExtra(PAYMENT_ID, razorpayPaymentID.toString());

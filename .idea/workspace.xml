@@ -9,10 +9,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb91ed2-73a8-4db8-888b-d1a5e11b472f" name="Default" comment="remove check request code">
+    <list default="true" id="1bb91ed2-73a8-4db8-888b-d1a5e11b472f" name="Default" comment="test toast">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayPlugin.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="125" column="46" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="46" />
+            <state relative-caret-position="193">
+              <caret line="100" column="74" selection-start-line="100" selection-start-column="74" selection-end-line="100" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
+            <state relative-caret-position="389">
+              <caret line="43" column="68" lean-forward="true" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,8 +149,8 @@
         <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/example/pubspec.yaml" />
         <option value="$PROJECT_DIR$/ios/razorpay_plugin.podspec" />
-        <option value="$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayActivity.java" />
         <option value="$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayPlugin.java" />
+        <option value="$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayActivity.java" />
       </list>
     </option>
   </component>
@@ -291,7 +289,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566230504244</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change activity result and exception">
+      <created>1566286369437</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566286369437</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test toast">
+      <created>1566311112672</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566311112672</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -385,7 +397,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove check request code" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove check request code" />
+    <MESSAGE value="change activity result and exception" />
+    <MESSAGE value="test toast" />
+    <option name="LAST_COMMIT_MESSAGE" value="test toast" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -503,20 +517,20 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayActivity.java">
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="125" column="46" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="46" />
+        <state relative-caret-position="389">
+          <caret line="43" column="68" lean-forward="true" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayPlugin.java">
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/hashbnm/razorpayplugin/RazorpayActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
+        <state relative-caret-position="193">
+          <caret line="100" column="74" selection-start-line="100" selection-start-column="74" selection-end-line="100" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
