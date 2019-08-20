@@ -98,12 +98,15 @@ public class RazorpayActivity extends Activity implements PaymentResultListener 
             data.putExtra(PAYMENT_ID, razorpayPaymentID);
             setResult(Activity.RESULT_OK, data);
             finish();
+            Toast.makeText(this, "Exception in onPaymentSuccess: " , Toast.LENGTH_LONG)
+                    .show();
         } catch (Exception e) {
             Log.e(TAG, "Exception in onPaymentSuccess", e);
             data.putExtra(PAYMENT_ID, razorpayPaymentID.toString());
             setResult(Activity.RESULT_OK, data);
             finish();
-
+            Toast.makeText(this, "Exception in onPaymentSuccess: " + e.getMessage(), Toast.LENGTH_LONG)
+                    .show();
         }
     }
 
@@ -123,6 +126,8 @@ public class RazorpayActivity extends Activity implements PaymentResultListener 
             finish();
         } catch (Exception e) {
             Log.e(TAG, "Exception in onPaymentError", e);
+            Toast.makeText(this, "Error in payment: " + e.getMessage(), Toast.LENGTH_LONG)
+                    .show();
             data.putExtra(PAYMENT_ID, response.toString());
             setResult(Activity.RESULT_CANCELED, data);
             finish();
