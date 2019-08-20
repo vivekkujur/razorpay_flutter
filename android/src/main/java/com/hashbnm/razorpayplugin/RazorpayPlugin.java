@@ -61,19 +61,33 @@ public class RazorpayPlugin implements MethodCallHandler, PluginRegistry.Activit
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent intent) {
 
+        super.onActivityResult(requestCode, resultCode, intent);
+
             if (resultCode == Activity.RESULT_OK) {
-                HashMap<String, String> data = new HashMap<>();
-                String response = intent.getStringExtra("payment_id");
-                data.put("code", "1");
-                data.put("message", response);
-                pendingResult.success(data);
+
+                if (intent != null) {
+                    HashMap<String, String> data = new HashMap<>();
+                    String response = intent.getStringExtra("payment_id");
+                    data.put("code", "1");
+                    data.put("message", response);
+                    pendingResult.success(data);
+                }else{
+                    HashMap<String, String> data = new HashMap<>();
+//                    String response = intent.getStringExtra("payment_id");
+                    data.put("code", "1");
+                    data.put("message", "pay_foodmonk");
+                    pendingResult.success(data);
+                }
+
             } else {
                 HashMap<String, String> data = new HashMap<>();
-                String response = intent.getStringExtra("payment_id");
+//                String response = intent.getStringExtra("payment_id");
                 data.put("code", "0");
-                data.put("message", response);
+                data.put("message", "Payment Failed.");
                 pendingResult.success(data);
+
             }
+
             pendingResult = null;
             arguments = null;
             return true;

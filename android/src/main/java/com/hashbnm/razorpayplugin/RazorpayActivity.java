@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RazorpayActivity extends Activity implements PaymentResultListener {
+
     private static final String TAG = RazorpayActivity.class.getSimpleName();
     public static String EXTRA_PRODUCT_NAME = "name";
     public static String EXTRA_PRODUCT_IMAGE = "image";
@@ -91,13 +92,18 @@ public class RazorpayActivity extends Activity implements PaymentResultListener 
     @SuppressWarnings("unused")
     @Override
     public void onPaymentSuccess(String razorpayPaymentID) {
+        Intent data = new Intent();
+
         try {
-            Intent data = new Intent();
             data.putExtra(PAYMENT_ID, razorpayPaymentID);
             setResult(Activity.RESULT_OK, data);
             finish();
         } catch (Exception e) {
             Log.e(TAG, "Exception in onPaymentSuccess", e);
+            data.putExtra(PAYMENT_ID, razorpayPaymentID.toString());
+            setResult(Activity.RESULT_OK, data);
+            finish();
+
         }
     }
 
@@ -109,13 +115,17 @@ public class RazorpayActivity extends Activity implements PaymentResultListener 
     @SuppressWarnings("unused")
     @Override
     public void onPaymentError(int code, String response) {
+        Intent data = new Intent();
+
         try {
-            Intent data = new Intent();
-            data.putExtra(PAYMENT_ID, response);
+            data.putExtra(PAYMENT_ID, response.toString());
             setResult(Activity.RESULT_CANCELED, data);
             finish();
         } catch (Exception e) {
             Log.e(TAG, "Exception in onPaymentError", e);
+            data.putExtra(PAYMENT_ID, response.toString());
+            setResult(Activity.RESULT_CANCELED, data);
+            finish();
         }
     }
 }
