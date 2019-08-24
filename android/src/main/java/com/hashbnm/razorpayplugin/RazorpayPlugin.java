@@ -61,8 +61,7 @@ public class RazorpayPlugin implements MethodCallHandler, PluginRegistry.Activit
     @Override
     public boolean onActivityResult(int requestCode, int resultCode, Intent intent) {
 
-        super.onActivityResult(requestCode, resultCode, intent);
-
+        if (requestCode == 8888) {
             if (resultCode == Activity.RESULT_OK) {
 
                 if (intent != null) {
@@ -71,7 +70,7 @@ public class RazorpayPlugin implements MethodCallHandler, PluginRegistry.Activit
                     data.put("code", "1");
                     data.put("message", response);
                     pendingResult.success(data);
-                }else{
+                } else {
                     HashMap<String, String> data = new HashMap<>();
 //                    String response = intent.getStringExtra("payment_id");
                     data.put("code", "1");
@@ -91,6 +90,9 @@ public class RazorpayPlugin implements MethodCallHandler, PluginRegistry.Activit
             pendingResult = null;
             arguments = null;
             return true;
+        }
+
+        return false;
 
     }
 }
